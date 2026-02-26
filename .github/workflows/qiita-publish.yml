@@ -1,0 +1,29 @@
+name: Publish to Qiita
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "qiita/public/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install @qiita/qiita-cli
+
+      - name: Publish articles
+        env:
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
+        run: npx qiita publish --all --root ./qiita

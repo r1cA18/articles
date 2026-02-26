@@ -1,0 +1,14 @@
+{
+  "name": "articles",
+  "private": true,
+  "scripts": {
+    "zenn:new": "zenn new:article",
+    "zenn:preview": "zenn preview",
+    "qiita:new": "qiita new",
+    "qiita:publish": "qiita publish"
+  },
+  "devDependencies": {
+    "zenn-cli": "^0.2.11",
+    "@qiita/qiita-cli": "^1.6.2"
+  }
+}
