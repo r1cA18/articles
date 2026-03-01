@@ -6,6 +6,10 @@ tags:
   - 生成AI
   - 試験
 private: false
+updated_at: ""
+id: null
+organization_url_name: null
+slide: false
 ---
 
 ## はじめに
@@ -37,11 +41,11 @@ private: false
 
 ### 役割分担
 
-| 担当            | 作業内容                                                                                  |
-| --------------- | ----------------------------------------------------------------------------------------- |
-| **Claude Code** | 問題解析、回答Markdown作成、draw.io図生成、HTML/CSS実装、PDFビルド                        |
-| **Codex CLI**   | 各セクションのレビュー・精査（`/post-review`コマンド）                                    |
-| **自分**        | 画像生成（nanobanana2）、動画生成（Sora 2.0）、最終チェック、提出 |
+| 担当            | 作業内容                                                           |
+| --------------- | ------------------------------------------------------------------ |
+| **Claude Code** | 問題解析、回答Markdown作成、draw.io図生成、HTML/CSS実装、PDFビルド |
+| **Codex CLI**   | 各セクションのレビュー・精査（`/post-review`コマンド）             |
+| **自分**        | 画像生成（nanobanana2）、動画生成（Sora 2.0）、最終チェック、提出  |
 
 Claude Codeが「手を動かす人」、Codex CLIが「レビュワー」、自分は「AIが苦手なクリエイティブ生成 + 最終判断」という分担です。
 
